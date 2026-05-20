@@ -1,4 +1,4 @@
-# nba player regular vs post season comparison — langchain LLM pipeline & frontend/fastAPI integration
+# nba reg. season vs playoffs — langchain LLM pipeline & frontend/fastAPI integration
 
 hello! langchain llm tool for nba player comparison in their reg. season vs post season.
 added frontend w fastapi integration:
