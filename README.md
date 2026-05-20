@@ -1,9 +1,9 @@
-# NBA Player Comparer — LangChain LLM Pipeline & Frontend/FastAPI integration
+# nba player regular vs post season comparison — langchain LLM pipeline & frontend/fastAPI integration
 
 hello! langchain llm tool for nba player comparison in their reg. season vs post season.
 added frontend w fastapi integration:
 
-# Backend (Python)
+# backend (python)
 1. Create a virtual environment and install dependencies:
 ```bash
 python -m venv .venv
@@ -20,11 +20,11 @@ API endpoints:
 - `POST /api/player` with JSON `{ "name": "LeBron James" }`
 - `GET /api/player/{name}`
 
-# Frontend (React + Vite)
+# frontend (react + vite)
 1. Install dependencies and start dev server:
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-The frontend expects the backend at `http://localhost:8000`
+the frontend expects the backend at `http://localhost:8000`
