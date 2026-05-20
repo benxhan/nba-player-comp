@@ -3,3 +3,40 @@ venv/
 __pycache__/
 *.pyc
 reports/
+node_modules/
+
+# Python envs
+.venv/
+__pypackages__/
+
+# Caches
+.pytest_cache/
+.mypy_cache/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# Frontend build
+frontend/dist/
+
+# Coverage / testing
+.coverage
+coverage/
+
+# Databases
+*.sqlite3
