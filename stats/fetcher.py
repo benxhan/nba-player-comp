@@ -17,16 +17,19 @@ def get_player_stats(player_name : str):
     latest_reg = reg_df #.iloc[-1]
     latest_post = post_df #.iloc[-1]
 
+    # games played, min/game, ppg, rpg, apg, fg % (efficency), fta, 
     def season_avgs(df):
-        totals = df[['GP', 'PTS', 'REB', 'AST', 'FGA', 'FGM']].sum()
+        totals = df[['GP', 'MIN', 'PTS', 'REB', 'AST', 'FGA', 'FGM', 'FTA']].sum()
         gp = totals['GP']
 
         return {
             "games_played": int(gp),
-            "points_per_game": round(totals['PTS'] / gp, 1),
-            "rebounds_per_game": round(totals['REB'] / gp, 1),
-            "assists_per_game": round(totals['AST'] / gp, 1),
-            "fg_pct": round(totals['FGM'] / totals['FGA'] * 100, 1),
+            "min_per_game": float(round(totals['MIN'] / gp, 1)),
+            "points_per_game": float(round(totals['PTS'] / gp, 1)),
+            "rebounds_per_game": float(round(totals['REB'] / gp, 1)),
+            "assists_per_game": float(round(totals['AST'] / gp, 1)),
+            "fg_pct": float(round(totals['FGM'] / totals['FGA'] * 100, 1)),
+            "free_throws_attempted_per_game": float(round(totals['FTA'] / gp, 1))
         }
 
     return {
